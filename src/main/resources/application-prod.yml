@@ -1,0 +1,6 @@
+server:
+  port: 8081
+info:
+  domian: sanii.cn
+  name: prod
+  age: 18
