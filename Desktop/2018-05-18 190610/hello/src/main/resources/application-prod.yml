@@ -1,0 +1,31 @@
+server:
+  port: 8080
+info:
+  domian: sanii.cn
+  name: dev
+  age: 18
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/hello?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 200651403San.
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+#  rabbitmq:
+#        addresses: 127.0.0.1:5672
+#        username: guest
+#        password: guest
+#        publisher-confirms: true
+#        virtual-host: /
+  jpa:
+    hibernate:
+      # create每次都会删除表重新创建 |update有数据则会保留 | create-drop
+      ddl-auto: update
+    show-sql: true
+
+  freemarker:
+    template-loader-path: classpath:/templates
+
